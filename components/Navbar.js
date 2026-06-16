@@ -1,45 +1,35 @@
+
 export default function Navbar() {
   return (
-    <nav className="fixed top-5 left-1/2 z-50 w-[90%] max-w-7xl -translate-x-1/2 rounded-2xl bg-black/80 backdrop-blur-md">
-      <div className="flex items-center justify-between px-6 py-4">
-
-        {/* Logo */}
+    <nav className="fixed left-1/2 top-5 z-50 w-[90%] max-w-7xl -translate-x-1/2 rounded-2xl bg-black px-6 py-5 text-white">
+      <div className="flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-red-500 text-white font-bold">
+          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-red-500 text-xl font-bold">
             A
           </div>
 
-          <h1 className="text-xl font-bold tracking-wide text-white md:text-2xl">
-            ADVENTURE
-            <span className="text-red-500">.</span>
-            TRAVEL
+          <h1 className="text-2xl font-extrabold tracking-wide">
+            ADVENTURE<span className="text-red-500">.</span>TRAVEL
           </h1>
         </div>
 
-        {/* Navigation Links */}
-        <div className="hidden md:flex items-center gap-8 text-white">
-          <a href="#" className="hover:text-red-400 transition">
+        <div className="hidden items-center gap-8 text-lg md:flex">
+          <a href="#" className="transition hover:text-red-400">
             Destinations
           </a>
 
-          <a href="#" className="hover:text-red-400 transition">
+          <a href="#" className="transition hover:text-red-400">
             Plan A Trip
           </a>
 
-          <a href="#" className="hover:text-red-400 transition">
+          <a href="#" className="transition hover:text-red-400">
             About
           </a>
 
-          <a href="#" className="hover:text-red-400 transition">
+          <a href="#" className="transition hover:text-red-400">
             Subscribe
           </a>
         </div>
-
-        {/* Mobile Menu */}
-        <button className="text-white md:hidden text-2xl">
-          ☰
-        </button>
-
       </div>
     </nav>
   );

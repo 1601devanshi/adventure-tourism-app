@@ -1,6 +1,9 @@
 
+"use client";
+
 import { FaPlane } from "react-icons/fa";
 import { Dancing_Script } from "next/font/google";
+import { TypeAnimation } from "react-type-animation";
 
 const dancing = Dancing_Script({
   subsets: ["latin"],
@@ -52,9 +55,23 @@ export default function IndiaAdventures() {
   return (
     <section className="bg-black text-white px-6 md:px-12 py-24">
       <div className="text-center mb-16">
-        <p className="text-red-500 uppercase tracking-[10px] text-sm font-bold mb-4">
-          CURATED FOR EXPLORERS
-        </p>
+       
+        <TypeAnimation
+  sequence={[
+    "CURATED FOR EXPLORERS",
+    2500,
+    "MADE FOR ADVENTURE",
+    2500,
+    "DISCOVER INCREDIBLE INDIA",
+    2500,
+  ]}
+  wrapper="p"
+  speed={45}
+  repeat={Infinity}
+  className="text-red-500 uppercase tracking-[0.45em] text-sm md:text-base font-bold mb-6"
+/>
+
+        
 
         <h2 className="text-4xl md:text-6xl font-extrabold mb-5">
   Experiences That{" "}
